@@ -1,0 +1,7 @@
+<div appHighlight="lightgray" #myHighlight="appHighlight">
+  <p>Copyrights &copy; 2020, {{appCompany}}</p>
+  <p>Today {{today | date:'fullDate' | lowercase}}</p>
+  <p>Today {{today | date:'yyyy/MM/dd'}}</p>
+  <p>Hightlight color : {{myHighlight.color | uppercase}}</p>
+  <button (click)="raise()">Error</button>
+</div>

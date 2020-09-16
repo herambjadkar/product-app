@@ -1,0 +1,13 @@
+<h2>Product Search</h2>
+
+<button (click)="reset()">Reset</button>
+
+<form [formGroup]="group">
+  <input type="text" name="searchText" formControlName="search" />
+</form>
+
+<ul>
+  <li *ngFor="let product of product$ | async">
+    {{product.name}}
+  </li>
+</ul>

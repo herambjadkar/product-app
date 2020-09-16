@@ -1,0 +1,19 @@
+<h2>Contacts</h2>
+
+<!-- contact is parent component
+     address is chils component
+
+
+-->
+
+<app-address [address]="headOffice" (contactEvent)="contactHandler($event)">
+</app-address>
+
+<app-address [address]="branchOffice" (contactEvent)="contactHandler($event)">
+</app-address>
+
+<pre>
+  {{headOffice | json}}
+</pre>
+
+<p>Main Office City {{mainOffice?.city}}</p>
